@@ -1,62 +1,115 @@
 // Typography
 //
 // Base font styles for headings and links.
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
 .h {
-  font-family: var(--headings-font-family);
-  font-weight: bold;
-  margin: 0 0 0.5em;
-  color: var(--headings-color);
+    font-family: var(--headings-font-family);
+    font-weight: bold;
+    margin: 0 0 0.5em;
+    color: var(--headings-color);
 }
 
-h1, .h1 {
-  font-size: var(--headings-sizes-h1);
+h1,
+.h1 {
+    font-size: var(--headings-sizes-h1);
 }
 
-h2, .h2 {
-  font-size: var(--headings-sizes-h2);
+h2,
+.h2 {
+    font-size: var(--headings-sizes-h2);
 }
 
-h3, .h3 {
-  font-size: var(--headings-sizes-h3);
+h3,
+.h3 {
+    font-size: var(--headings-sizes-h3);
 }
 
-h4, .h4 {
-  font-size: var(--headings-sizes-h4);
+h4,
+.h4 {
+    font-size: var(--headings-sizes-h4);
 }
 
-h5, .h5 {
-  font-size: var(--headings-sizes-h5);
+h5,
+.h5 {
+    font-size: var(--headings-sizes-h5);
 }
 
-h6, .h6 {
-  font-size: var(--headings-sizes-h6);
+h6,
+.h6 {
+    font-size: var(--headings-sizes-h6);
 }
 
 p {
-  margin: 0 0 1em;
+    margin: 0 0 1em;
 }
 
 a {
-  color: var(--base-link-color);
-  &:focus {
-    text-decoration: none;
-  }
-  @include media('hover') {
-    &:hover {
-      text-decoration: none;
+    color: var(--base-link-color);
+    &:focus {
+        text-decoration: none;
     }
-  }
+    @include media('hover') {
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+.font19 {
+    font-size: 19px;
+}
+
+.font15 {
+    font-size: 15px;
+}
+
+.font12 {
+    font-size: 12px;
+}
 
 .text-type-1 {
-  font-size: 20px;
-  line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1;
+}
+
+.medium-title {
+    font-size: 32px;
+    line-height: 1.25;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+.small-title {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+* .font-normal {
+    font-weight: 400;
 }
