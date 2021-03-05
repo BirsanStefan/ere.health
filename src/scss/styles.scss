@@ -2,7 +2,7 @@
 // will be correctly compiled during `gulp` and `gulp production`
 
 //* Vendors *//
-@import './src/vendor_entries/_include-media-or';
+@import './node_modules/include-media/dist/include-media';
 
 
 //* Abstracts modules *//
@@ -19,3 +19,5 @@
 
 //* Components *//
 @import 'components/main';
+
+
