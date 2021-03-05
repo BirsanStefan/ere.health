@@ -1,4 +1,9 @@
 .header {
+    @include container-type-1;
+    padding: 51px 0;
+    &__left {
+        
+    }
     .logo {
         img {
             height: 21px;

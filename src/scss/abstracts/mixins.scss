@@ -59,7 +59,7 @@
   .#{$child-name1}{
     display: table-cell;
     vertical-align: $valign;
-    width: $width1; 
+    width: $width1;
   }
   .#{$child-name2} {
     display: table-cell;
@@ -121,7 +121,7 @@
 /// values—foreground-color background-color.
 /// @link http://bourbon.io/docs/#triangle
 /// @param $size - argument can take one or two values—width height
-/// @param $color - argument can take one or two 
+/// @param $color - argument can take one or two
 /// @param $direction - value: up, down, left, right, up-right, up-left, down-right, down-left
 /// @example @include triangle(12px, gray, down);
 /// @include triangle(12px 6px, gray blue, up-left);
@@ -227,4 +227,24 @@ $animation-speed: 0.3s !default;
   &:-moz-placeholder {@content;}
   &:-ms-input-placeholder {@content;}
   &.placeholder {@content;}
+}
+
+
+
+// our mixin
+
+@mixin container-type-1 {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-spbtwn {
+  @include flex-center;
+  justify-content: space-between;
 }
