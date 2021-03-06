@@ -32,13 +32,13 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-    body {
+    .wrapper {
         padding: 0 40px;
     }
 }
 
 @media screen and (max-width: 667px) {
-    body {
+    .wrapper {
         padding: 0 28px;
     }
 }
