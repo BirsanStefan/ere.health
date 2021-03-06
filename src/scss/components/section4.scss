@@ -113,6 +113,9 @@
             width: 100%;
             position: relative;
             bottom: 0;
+            &__percent {
+                line-height: normal;
+            }
             &__text,
             &__percent {
                 width: 450px;
@@ -132,6 +135,29 @@
             &__percent {
                 font-size: 120px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .digitals {
+        width: calc(100% + 56px);
+        margin: 0 -28px;
+        padding: 238px 28px 0;
+        &__content {
+            width: calc(100% + 56px);
+            margin: 0 -28px;
+            margin-top: 76px;
+            padding: 0 28px;
+        }
+        &__title {
+            &__text {
+                width: 100%;
+            }
+        }
+        .offer {
+            width: calc(100% + 56px);
+            margin: 0 -28px;
         }
     }
 }
