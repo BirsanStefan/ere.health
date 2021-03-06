@@ -1,0 +1,26 @@
+.sectionMehrErfolg {
+    @include container-type-1;
+    padding: 50px 50px 50px 100px;
+    &__container {
+        @include flex-center;
+        flex-wrap: nowrap;
+        column-gap: 50px;
+    }
+    &__elem {
+        img {
+            max-width: 640px;
+            @media screen and (max-width: 1200px) {
+                max-width: 500px;
+            }
+        }
+        .section-title span {
+            font-weight: 400;
+        }
+        &.left {
+            order: 1;
+        }
+        &.right {
+            order: 0;
+        }
+    }
+}
