@@ -130,7 +130,10 @@ body {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1400px) {
+    .big-title {
+        font-size: 48px;
+    }
     .section-title {
         font-size: 44px;
     }
