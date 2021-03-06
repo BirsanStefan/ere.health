@@ -1,0 +1,38 @@
+.digitals {
+    position: relative;
+    background-color: #C4E0E4;
+    border-radius: 48px;
+    padding-top: 65px;
+    img {
+        position: absolute;
+        top: -68px;
+        left: 54px;
+    }
+    &__title {
+        text-align: center;
+        .section-title {
+            margin-bottom: 24px;
+        }
+        &__text {
+            width: 459px;
+            margin: 0 auto;
+        }
+    }
+    &__content {
+        padding: 96px 270px 141px 270px;
+        @include flex-spbtwn;
+        row-gap: 78px;
+        &__step {
+            width: 308px;
+            padding-right: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .digitals {
+        &__content {
+            padding: 96px 170px 141px 170px;
+        }
+    }
+}
