@@ -1,9 +1,32 @@
 .section-weichen {
+    position: relative;
     &__1 {
         background-color: #f6f5ef;
         width: 63%;
         border-radius: 48px;
-        padding: 55px 52px 48px 54px;
+        padding: 55px 52px 0 54px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        &__box {
+            width: 308px;
+            margin-bottom: 50px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            background-color: $accent--secondary;
+        }
     }
     &__2 {
         background-color: $accent--secondary;
@@ -15,7 +38,32 @@
         padding-right: 108px;
         padding-bottom: 80px;
         position: relative;
-        &__img {}
+        &__img {
+            max-width: 577px;
+            max-height: 575px;
+            position: relative;
+            margin-top: 140px;
+            .small-title {
+                margin-left: 106px;
+                margin-top: -40px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 524px;
+                height: 524px;
+                background: #F6F5EF;
+                border-radius: 50%;
+                top: -116px;
+                right: -52px;
+                z-index: 1;
+            }
+            img {
+                position: relative;
+                z-index: 2;
+            }
+        }
         &__text {
             width: 460px;
             max-width: 100%;
@@ -25,11 +73,21 @@
             display: block;
             position: absolute;
             width: 37%;
-            height: 436px;
+            height: 356px;
             border-radius: 48px 48px 0 0;
             right: 0;
             bottom: 100%;
             background-color: $accent--secondary;
         }
     }
+    // &:after {
+    //     content: "";
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     background-image: url(../images/bg-pattern.png);
+    // }
 }

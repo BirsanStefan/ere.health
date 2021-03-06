@@ -238,10 +238,16 @@ $animation-speed: 0.3s !default;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 @mixin flex-spbtwn {
     @include flex-center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 991px) {
+    @mixin container-type-1 {
+        max-width: 100%;
+    }
 }
