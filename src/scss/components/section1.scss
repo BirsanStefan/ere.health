@@ -2,7 +2,10 @@
     @include container-type-1;
     padding: 50px 50px 50px 100px;
     @media screen and (max-width: 991px) {
-        padding: 50px 0 50px 0;
+        padding: 50px 0;
+    }
+    @media screen and (max-width: 540px) {
+        padding: 10px 0 50px 0;
     }
     &__container {
         @include flex-center;
@@ -28,8 +31,10 @@
             }
         }
         .section-title {
+            line-height: 1.25;
             @media screen and (max-width: 540px) {
                 margin-bottom: 5px;
+                font-size: 34px;
             }
             span {
                 font-weight: 400;
@@ -54,6 +59,7 @@
                 display: none;
                 @media screen and (max-width: 991px) {
                     display: block;
+                    margin-left: -30px;
                 }
             }
         }
