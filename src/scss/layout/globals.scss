@@ -1,9 +1,23 @@
 body {
-    background-color: #fff;
+    background-color: #f6f5ef;
     margin: 0;
+    padding: 0 80px;
 }
 
 .section {
-    width: 956px;
+    max-width: 956px;
+    width: 100%;
     margin: auto;
+}
+
+.section-1010 {
+    max-width: 1010px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 0 40px;
+    }
 }
