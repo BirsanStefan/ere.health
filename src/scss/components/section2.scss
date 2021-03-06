@@ -38,7 +38,32 @@
         padding-right: 108px;
         padding-bottom: 80px;
         position: relative;
-        &__img {}
+        &__img {
+            max-width: 577px;
+            max-height: 575px;
+            position: relative;
+            margin-top: 140px;
+            .small-title {
+                margin-left: 106px;
+                margin-top: -40px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 524px;
+                height: 524px;
+                background: #F6F5EF;
+                border-radius: 50%;
+                top: -116px;
+                right: -52px;
+                z-index: 1;
+            }
+            img {
+                position: relative;
+                z-index: 2;
+            }
+        }
         &__text {
             width: 460px;
             max-width: 100%;
