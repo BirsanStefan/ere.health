@@ -1,5 +1,9 @@
 .section-weichen {
     position: relative;
+    @media screen and (max-width: 767px) {
+        width: calc(100% + 80px);
+        margin-left: -40px;
+    }
     &__1 {
         background-color: #f6f5ef;
         width: 63%;
@@ -19,6 +23,10 @@
             padding: 0;
             margin-top: 50px;
             margin-bottom: 50px;
+        }
+        @media screen and (max-width: 767px) {
+            padding-left: 40px;
+            padding-right: 40px;
         }
         &__box {
             width: 308px;
@@ -58,6 +66,7 @@
         @media screen and (max-width: 991px) {
             border-radius: 48px;
             flex-wrap: wrap;
+            padding: 0;
         }
         &__img {
             width: 575px;
@@ -69,6 +78,10 @@
             @media screen and (max-width: 991px) {
                 max-width: 100%;
                 order: 2;
+            }
+            @media screen and (max-width: 767px) {
+                width: calc(100% - 80px);
+                margin: auto;
             }
             .small-title {
                 margin-left: 18%;
@@ -88,10 +101,19 @@
                 top: -116px;
                 right: -52px;
                 z-index: 1;
+                @media screen and (max-width: 767px) {
+                    width: calc(100% - 80px);
+                    height: calc(100% - 80px);
+                    top: 0;
+                    left: 0;
+                }
             }
             img {
                 position: relative;
                 z-index: 2;
+                @media screen and (max-width: 767px) {
+                    margin-left: -40px;
+                }
             }
         }
         &__text {
