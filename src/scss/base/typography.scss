@@ -55,7 +55,9 @@ p {
 }
 
 a {
-    color: var(--base-link-color);
+    text-decoration: none;
+    color: #000;
+    // color: var(--base-link-color);
     &:focus {
         text-decoration: none;
     }
@@ -117,11 +119,16 @@ body {
     margin-bottom: 8px;
 }
 
+.big-title {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1;
+}
+
 * .font-normal {
     font-weight: 400;
 }
-
-@media screen and (max-width: 1200px) {}
 
 @media screen and (max-width: 1050px) {
     .section-title {
@@ -129,8 +136,14 @@ body {
     }
 }
 
-@media screen and (max-width: 1025px) {}
-
-@media screen and (max-width: 991px) {}
-
-@media screen and (max-width: 769px) {}
+@media screen and (max-width: 540px) {
+    .section-title {
+        font-size: 38px;
+    }
+    .font19 {
+        font-size: 17px;
+    }
+    .font15 {
+        font-size: 16px;
+    }
+}
