@@ -31,19 +31,10 @@
         @media screen and (max-width: 768px) {
             max-width: 400px;
         }
-        // .flex {
-        //     display: flex;
-        // }
-        // .wordwithhyphen {
-        //     display: flex;
-        //     @media screen and (max-width: 540px) {
-        //         flex-wrap: wrap;
-        //     }
-        // }
         .hyphen, br {
             display: none;
-            @media screen and (max-width: 480px) {
-                display: block;
+            @media screen and (max-width: 490px) {
+                display: inline-block;
             }
         }
     }
