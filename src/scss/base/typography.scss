@@ -114,16 +114,20 @@ body {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1200px) {}
-
 @media screen and (max-width: 1050px) {
     .section-title {
         font-size: 44px;
     }
 }
 
-@media screen and (max-width: 1025px) {}
-
-@media screen and (max-width: 991px) {}
-
-@media screen and (max-width: 769px) {}
+@media screen and (max-width: 540px) {
+    .section-title {
+        font-size: 38px;
+    }
+    .font19 {
+        font-size: 17px;
+    }
+    .font15 {
+        font-size: 16px;
+    }
+}
