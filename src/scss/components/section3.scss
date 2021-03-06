@@ -1,0 +1,94 @@
+.steps {
+    padding: 220px 0 247px 0;
+    &__title {
+        @include flex-spbtwn;
+        margin-bottom: 64px;
+        &__content {
+            max-width: 470px;
+            width: 100%;
+        }
+    }
+    .section-title {
+        max-width: 416px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    &__content {
+        @include flex-spbtwn;
+        margin-left: 0;
+        column-gap: 16px;
+        row-gap: 16px;
+        position: relative;
+        .lines-dark {
+            position: absolute;
+            background-color: #06203D;
+            height: 329px;
+            width: 794px;
+            border-radius: 24px;
+            z-index: 1;
+            left: 10%;
+            top: 25%;
+        }
+        &__step {
+            background-color: #fff;
+            width: 49%;
+            height: 259px;
+            padding: 57px 44px 57px 50px;
+            z-index: 10;
+            box-shadow: 0px 12px 24px -6px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            &--title {
+                display: flex;
+                align-items: center;
+                column-gap: 23px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .steps {
+        .section-title {
+            max-width: 400px;
+        }
+        &__content {
+            .lines-dark {
+                width: 694px;
+                left: 17%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .steps {
+        padding: 180px 0 200px 0;
+        .section-title {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        &__content {
+            .lines-dark {
+                width: 650px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .steps {
+        &__content {
+            .lines-dark {
+                width: 1000px;
+                transform: rotate(-90deg);
+                left: 0;
+                top: 35%;
+            }
+            &__step {
+                width: 650px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
