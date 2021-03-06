@@ -3,10 +3,16 @@
     background-color: $accent--secondary;
     border-radius: 48px;
     padding: 65px 0 284px;
-    img {
+    .clips {
         position: absolute;
-        top: -68px;
+        width: 200px;
+        height: 260px;
+        top: -65px;
         left: 54px;
+        background-image: url(../images/clips.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     &__title {
         text-align: center;
@@ -24,6 +30,7 @@
         width: 760px;
         margin: auto;
         margin-top: 96px;
+        position: relative;
         &__step {
             width: 308px;
             padding-right: 13px;
@@ -36,8 +43,8 @@
         padding: 48px 43px;
         width: 740px;
         position: absolute;
-        bottom: -153px;
-        left: 250px;
+        bottom: -440px;
+        left: 0;
         background-color: #fff;
         box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.25);
         border-radius: 12px;
@@ -62,6 +69,68 @@
             &--description {
                 font-size: 15px;
                 margin-top: 1.6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .digitals {
+        padding: 65px 0 204px;
+        .clips {
+            width: 130px;
+            top: -88px;
+        }
+        &__content {
+            margin-top: 76px;
+            row-gap: 58px;
+        }
+        .offer {
+            bottom: -360px;
+        }
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .digitals {
+        padding: 238px 0 0;
+        background-color: rgba(145, 234, 228, 0.17);
+        .clips {
+            width: 240px;
+            background-image: url(../images/clips-mobile.svg);
+            top: -65px;
+            left: 0;
+        }
+        &__content {
+            width: 100%;
+            &__step {
+                width: 450px;
+                padding-right: 0;
+                margin: auto;
+            }
+        }
+        .offer {
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            &__text,
+            &__percent {
+                width: 450px;
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .digitals {
+        &__content {
+            row-gap: 48px;
+        }
+        .offer {
+            &__percent {
+                font-size: 120px;
             }
         }
     }

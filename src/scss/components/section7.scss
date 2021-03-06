@@ -1,6 +1,9 @@
 .section-fragen {
     margin-top: 178px;
     margin-bottom: 194px;
+    @media screen and (max-width: 769px) {
+        width: 100%;
+    }
     &__block {
         width: 686px;
         margin-left: auto;
