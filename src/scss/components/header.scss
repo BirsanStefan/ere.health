@@ -1,12 +1,59 @@
 .header {
     @include container-type-1;
+    @include flex-spbtwn;
     padding: 51px 0;
-    &__left {
-        
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 100;
+    top: 0;
+    // background-color: #f6f5ef;
+    background-color: #fff;
+    @media screen and (max-width: 1400px) {
+        width: calc(100% + 160px);
+        padding: 51px 80px;
     }
-    .logo {
-        img {
-            height: 21px;
+    &__left {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 75px;
+        @media screen and (max-width: 1200px) {
+            column-gap: 55px;
+        }
+        @media screen and (max-width: 1025px) {
+            column-gap: 40px;
+        }
+        .logo {
+            img {
+                height: 21px;
+                @media screen and (max-width: 380px) {
+                    height: 18px;
+                }
+            }
+        }
+        .mainMenu {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            column-gap: 54px;
+            @media screen and (max-width: 1200px) {
+                column-gap: 40px;
+            }
+            @media screen and (max-width: 1025px) {
+                column-gap: 25px;
+            }
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+            &__item {
+                font-size: 18px;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+        }
+    }
+    .button.button-yellow span {
+        @media screen and (max-width: 991px) {
+            display: none;
         }
     }
 }
