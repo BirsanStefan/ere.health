@@ -1,0 +1,28 @@
+.footer {
+    background-color: $accent--secondary;
+    padding: 80px 54px 22px;
+    position: relative;
+    border-radius: 48px;
+    .clips {
+        position: absolute;
+        right: 62px;
+        top: -75px;
+    }
+    .section-title {
+        width: 578px;
+    }
+    .footer-menu {
+        @include flex-spbtwn;
+        &__links {
+            a {
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+    .logo {
+        img {
+            width: 250px;
+        }
+    }
+}
