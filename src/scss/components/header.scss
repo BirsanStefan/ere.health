@@ -6,7 +6,7 @@
     z-index: 100;
     top: 0;
     background-color: #f6f5ef;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.329);
+    transition: .25s linear all;
     @media screen and (max-width: 1400px) {
         padding: 31px 35px;
     }
@@ -58,10 +58,10 @@
                 &::after {
                     content: "";
                     position: absolute;
-                    bottom: -5px;
+                    bottom: 0;
                     height: 6px;
-                    width: 91px;
-                    left: calc(50% - 45.5px);
+                    width: 100%;
+                    left: 0;
                     background-color: #EDD767;
                     border-radius: 8px;
                     opacity: 0;
@@ -71,7 +71,7 @@
                 &:hover::after {
                     opacity: 1;
                     visibility: visible;
-                    bottom: -10px;
+                    bottom: -5px;
                 }
                 &.active {
                     position: relative;
@@ -80,8 +80,8 @@
                         position: absolute;
                         bottom: -5px;
                         height: 6px;
-                        width: 91px;
-                        left: calc(50% - 45.5px);
+                        width: 100%;
+                        left: 0;
                         background-color: #EDD767;
                         border-radius: 8px;
                         opacity: 1;
@@ -91,9 +91,19 @@
             }
         }
     }
-    .button.button-yellow span {
-        @media screen and (max-width: 991px) {
-            display: none;
+    .button {
+        line-height: 1;
+        span {
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
         }
+    }
+}
+
+body.sticky-header {
+    .header {
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.329);
     }
 }

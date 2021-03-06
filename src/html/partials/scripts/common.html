@@ -1,2 +1,17 @@
-<script src="@@webRoot/js/@@vendorJs" defer></script>
-<script src="@@webRoot/js/@@mainJs" defer></script>
+<script>
+    checkScrollPosition();
+    window.addEventListener("scroll", function() {
+        checkScrollPosition();
+    });
+
+    function checkScrollPosition() {
+        var body = document.body;
+        if (window.scrollY == 0) {
+            body.classList.remove("sticky-header");
+            console.log(1);
+        } else {
+            body.classList.add("sticky-header");
+            console.log(2);
+        }
+    }
+</script>
