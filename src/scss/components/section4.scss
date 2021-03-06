@@ -2,7 +2,7 @@
     position: relative;
     background-color: #C4E0E4;
     border-radius: 48px;
-    padding-top: 65px;
+    padding: 65px 0 284px;
     img {
         position: absolute;
         top: -68px;
@@ -19,20 +19,50 @@
         }
     }
     &__content {
-        padding: 96px 270px 141px 270px;
         @include flex-spbtwn;
         row-gap: 78px;
+        width: 760px;
+        margin: auto;
+        margin-top: 96px;
         &__step {
             width: 308px;
             padding-right: 13px;
         }
     }
-}
-
-@media screen and (max-width: 1600px) {
-    .digitals {
-        &__content {
-            padding: 96px 170px 141px 170px;
+    .offer {
+        @include flex-spbtwn;
+        justify-content: space-around;
+        column-gap: 48px;
+        padding: 48px 43px;
+        width: 740px;
+        position: absolute;
+        bottom: -153px;
+        left: 250px;
+        background-color: #fff;
+        box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.25);
+        border-radius: 12px;
+        &__percent {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 142px;
+            font-weight: 700;
+        }
+        &__text {
+            width: 319px;
+            .small-title {
+                margin-bottom: 0;
+            }
+            .button {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 42px;
+                margin-top: 24px;
+                font-size: 15px;
+            }
+            &--description {
+                font-size: 15px;
+                margin-top: 1.6px;
+            }
         }
     }
 }
