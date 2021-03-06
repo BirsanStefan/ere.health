@@ -6,6 +6,7 @@
     margin-bottom: 66px;
     @media screen and (max-width: 540px) {
         margin-bottom: 55px;
+        padding: 80px 25px 22px;
     }
     .clips__desktop img, .clips__resp img {
         position: absolute;
@@ -25,15 +26,25 @@
     }
     .section-title {
         max-width: 578px;
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 1400px) {
             max-width: 500px;
         }
         @media screen and (max-width: 768px) {
             max-width: 400px;
+            margin-bottom: 50px;
+        }
+        @media screen and (max-width: 330px) {
+            font-size: 34px;
+        }
+        .brafterdas br {
+            display: none;
+            @media screen and (max-width: 450px) {
+                display: block;
+            }
         }
         .hyphen, br {
             display: none;
-            @media screen and (max-width: 490px) {
+            @media screen and (max-width: 450px) {
                 display: inline-block;
             }
         }
@@ -53,6 +64,9 @@
     .logo {
         img {
             width: 250px;
+            @media screen and (max-width: 540px) {
+                width: 181px;
+            }
         }
     }
 }
