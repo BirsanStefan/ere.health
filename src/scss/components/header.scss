@@ -6,13 +6,11 @@
     position: -webkit-sticky;
     z-index: 100;
     top: 0;
-    // background-color: #f6f5ef;
-    background-color: #fff;
-    @media screen and (max-width: 1400px) {
-        max-width: calc(100% + 160px);
-        padding: 51px 80px;
-        margin-left: -80px;
-    }
+    background-color: #f6f5ef;
+    // background-color: #fff;
+    // @media screen and (max-width: 1400px) {
+    //     padding: 51px 15px;
+    // }
     &__left {
         display: flex;
         align-items: flex-end;
