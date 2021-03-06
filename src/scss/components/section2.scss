@@ -1,0 +1,35 @@
+.section-weichen {
+    &__1 {
+        background-color: #f6f5ef;
+        width: 63%;
+        border-radius: 48px;
+        padding: 55px 52px 48px 54px;
+    }
+    &__2 {
+        background-color: $accent--secondary;
+        border-radius: 48px 0 48px 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 140px;
+        padding-right: 108px;
+        padding-bottom: 80px;
+        position: relative;
+        &__img {}
+        &__text {
+            width: 460px;
+            max-width: 100%;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 37%;
+            height: 436px;
+            border-radius: 48px 48px 0 0;
+            right: 0;
+            bottom: 100%;
+            background-color: $accent--secondary;
+        }
+    }
+}
