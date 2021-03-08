@@ -94,6 +94,11 @@
             margin-left: auto;
             margin-right: -40px;
         }
+        @media screen and (max-width: 767px) {
+            order: 0;
+            margin-left: auto;
+            margin-right: -28px;
+        }
         &:after {
             content: "";
             display: block;

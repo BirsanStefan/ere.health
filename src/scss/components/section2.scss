@@ -1,9 +1,5 @@
 .section-weichen {
     position: relative;
-    @media screen and (max-width: 767px) {
-        width: calc(100% + 80px);
-        margin-left: -40px;
-    }
     &__1 {
         background-color: #f6f5ef;
         width: 63%;
@@ -24,10 +20,6 @@
             margin-top: 50px;
             margin-bottom: 50px;
         }
-        @media screen and (max-width: 767px) {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
         &__box {
             width: 308px;
             max-width: 46%;
@@ -35,6 +27,10 @@
             @media screen and (max-width: 991px) {
                 width: 46%;
                 margin-bottom: 20px;
+            }
+            @media screen and (max-width: 767px) {
+                width: 100%;
+                max-width: 100%;
             }
         }
         &::after {
@@ -68,6 +64,14 @@
             flex-wrap: wrap;
             padding: 0;
         }
+        @media screen and (max-width: 767px) {
+            width: calc(100% + 80px);
+            margin-left: -40px;
+        }
+        @media screen and (max-width: 667px) {
+            width: calc(100% + 56px);
+            margin-left: -28px;
+        }
         &__img {
             width: 575px;
             position: relative;
@@ -81,6 +85,11 @@
             }
             @media screen and (max-width: 767px) {
                 width: calc(100% - 80px);
+                margin: auto;
+                overflow: hidden;
+            }
+            @media screen and (max-width: 667px) {
+                width: calc(100% - 56px);
                 margin: auto;
             }
             .small-title {
@@ -102,8 +111,14 @@
                 right: -52px;
                 z-index: 1;
                 @media screen and (max-width: 767px) {
-                    width: calc(100% - 80px);
-                    height: calc(100% - 80px);
+                    width: calc(100vw - 80px);
+                    height: calc(100vw - 80px);
+                    top: 0;
+                    left: 0;
+                }
+                @media screen and (max-width: 667px) {
+                    width: calc(100vw - 56px);
+                    height: calc(100vw - 56px);
                     top: 0;
                     left: 0;
                 }
@@ -113,6 +128,9 @@
                 z-index: 2;
                 @media screen and (max-width: 767px) {
                     margin-left: -40px;
+                }
+                @media screen and (max-width: 667px) {
+                    margin-left: -28px;
                 }
             }
         }
