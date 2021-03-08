@@ -157,6 +157,12 @@
                 order: 0;
                 padding: 140px 40px 100px 40px;
             }
+            @media screen and (max-width: 667px) {
+                width: 100%;
+                max-width: 100%;
+                order: 0;
+                padding: 140px 28px 100px 28px;
+            }
         }
         &::after {
             content: "";
