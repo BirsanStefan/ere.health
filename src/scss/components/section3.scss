@@ -141,6 +141,7 @@
     .steps {
         &__content {
             width: 319px;
+            max-width: 100%;
             .lines-dark {
                 height: 265px;
                 width: 1213px;

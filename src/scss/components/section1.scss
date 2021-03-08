@@ -44,6 +44,13 @@
             @media screen and (max-width: 991px) {
                 order: 1;
             }
+            .text-type-1 {
+                font-family: 'Raleway', sans-serif;
+                max-width: 340px;
+                @media screen and (max-width: 991px) {
+                    max-width: 100%;
+                }
+            }
         }
         &.right {
             @media screen and (max-width: 991px) {
