@@ -115,7 +115,7 @@
 
 @media screen and (max-width: 769px) {
     .steps {
-        padding: 120px 0 140px 0;
+        padding: 230px 0 140px 0;
         &__content {
             width: 500px;
             .lines-dark {
@@ -143,9 +143,11 @@
             width: 319px;
             max-width: 100%;
             .lines-dark {
-                height: 265px;
-                width: 1213px;
-                left: -140%;
+                height: 78%;
+                width: 84%;
+                left: 8%;
+                top: 11%;
+                transform: none;
             }
             &__step {
                 height: auto;
