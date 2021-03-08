@@ -2,11 +2,9 @@
 //
 // This file will be compiled into app.js
 // Feel free with using ES6 here.
-import $ from 'jquery';
 
-import dots from './modules/dots';
+import AOS from 'aos';
 
 // When DOM is ready
-$(() => {
-  dots();
-});
+
+AOS.init();
