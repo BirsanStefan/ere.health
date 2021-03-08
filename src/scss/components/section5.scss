@@ -3,7 +3,11 @@
     padding-top: 315px;
     @media screen and (max-width: 991px) {
         flex-wrap: wrap;
-        padding-top: 50px;
+        padding-top: 250px;
+    }
+    @media screen and (max-width: 991px) {
+        flex-wrap: wrap;
+        padding-top: 100px;
     }
     &__left {
         width: 50%;
