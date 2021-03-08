@@ -1,8 +1,9 @@
 .section-contact {
-    margin: 196px auto 0;
+    margin: 100px auto 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-bottom: 120px;
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
     }

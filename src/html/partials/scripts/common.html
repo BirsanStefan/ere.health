@@ -1,6 +1,12 @@
 <script src="@@webRoot/js/@@vendorJs" defer></script>
 <script src="@@webRoot/js/@@mainJs" defer></script>
 
+
+<!--JQuery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+<!--AOS-->
 <script>
     checkScrollPosition();
     window.addEventListener("scroll", function() {
@@ -19,4 +25,27 @@
 
 <script>
     AOS.init();
+</script>
+
+
+<!--Add Menu Active Class when scrolling to div-->
+<script>
+    $(window).scroll(function () {
+        var windscroll = $(window).scrollTop();
+        if (windscroll >= 250) {
+            $('section').each(function (i) {
+            // The number at the end of the next line is how pany pixels you from the top you want it to activate.
+            if ($(this).position().top <= windscroll + 150) {
+                $('.mainMenu__item.active').removeClass('active');
+                $('.mainMenu__item').eq(i).addClass('active');
+            }
+            });
+
+        } else {
+
+            $('.mainMenu__item.active').removeClass('active');
+            $('.mainMenu__item:first').addClass('active');
+        }
+
+    }).scroll();
 </script>
