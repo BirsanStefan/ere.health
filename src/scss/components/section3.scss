@@ -95,6 +95,9 @@
 
 @media screen and (max-width: 901px) {
     .steps {
+        .font15 {
+            font-size: 16px;
+        }
         &__content {
             row-gap: 80px;
             width: 650px;
