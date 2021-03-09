@@ -5,7 +5,7 @@
         width: 63%;
         min-width: 700px;
         border-radius: 48px;
-        padding: 55px 52px 0 54px;
+        padding: 45px 52px 0 54px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -80,6 +80,7 @@
             width: 575px;
             position: relative;
             margin-top: 140px;
+            left: -54px;
             @media screen and (max-width: 1400px) {
                 max-width: 48%;
             }
@@ -116,7 +117,7 @@
                 background: #F6F5EF;
                 border-radius: 50%;
                 top: -116px;
-                right: -42px;
+                right: -52px;
                 z-index: 1;
                 @media screen and (max-width: 767px) {
                     width: calc(100vw - 80px);
@@ -145,7 +146,7 @@
             }
         }
         &__text {
-            width: 460px;
+            width: 572px;
             max-width: 100%;
             @media screen and (max-width: 1400px) {
                 max-width: 40%;
@@ -172,7 +173,7 @@
             height: 356px;
             border-radius: 48px 48px 0 0;
             right: 0;
-            bottom: calc(100% - 1px);
+            bottom: calc(100% - 6px);
             background-color: $accent--secondary;
             @media screen and (max-width: 991px) {
                 display: none;
