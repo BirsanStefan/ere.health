@@ -31,6 +31,9 @@
             @media screen and (max-width: 767px) {
                 width: 100%;
                 max-width: 100%;
+                .font15 {
+                    font-size: 16px;
+                }
             }
         }
         &::after {
@@ -87,6 +90,7 @@
             @media screen and (max-width: 991px) {
                 max-width: 100%;
                 order: 2;
+                left: 0;
             }
             @media screen and (max-width: 767px) {
                 width: calc(100% - 80px);
@@ -123,13 +127,13 @@
                     width: calc(100vw - 80px);
                     height: calc(100vw - 80px);
                     top: -115px;
-                    left: 0;
+                    left: unset;
+                    right: 0;
                 }
                 @media screen and (max-width: 667px) {
                     width: calc(100vw - 56px);
                     height: calc(100vw - 56px);
                     top: -84px;
-                    left: 0;
                 }
             }
             img {
