@@ -1,9 +1,6 @@
 body {
     background-color: #f6f5ef;
     margin: 0;
-}
-
-.wrapper {
     padding: 0 80px;
 }
 
@@ -15,7 +12,7 @@ body {
 
 .section-big {
     max-width: 1280px;
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -25,26 +22,14 @@ body {
     margin: 0 auto;
 }
 
-.section-1280 {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 @media screen and (max-width: 1200px) {
-    .wrapper {
+    body {
         padding: 0 40px;
     }
 }
 
-@media screen and (max-width: 767px) {
-    body {
-        // background-color: #fff;
-    }
-}
-
 @media screen and (max-width: 667px) {
-    .wrapper {
+    body {
         padding: 0 28px;
     }
 }
