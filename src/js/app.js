@@ -7,4 +7,6 @@ import AOS from 'aos';
 
 // When DOM is ready
 
-AOS.init();
+AOS.init({
+    duration: 1000,
+});
