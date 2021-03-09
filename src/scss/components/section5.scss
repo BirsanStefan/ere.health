@@ -2,13 +2,14 @@
     display: flex;
     padding-top: 315px;
     padding-bottom: 100px;
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1025px) {
         flex-wrap: wrap;
         padding-top: 250px;
+        padding-bottom: 80px;
     }
-    @media screen and (max-width: 991px) {
-        flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
         padding-top: 100px;
+        padding-bottom: 190px;
     }
     &__left {
         width: 50%;
