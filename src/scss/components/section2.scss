@@ -56,8 +56,10 @@
         align-items: flex-start;
         padding: 140px 108px 80px 54px;
         position: relative;
+        column-gap: 80px;
         @media screen and (max-width: 1400px) {
             padding: 70px 40px 30px 54px;
+            column-gap: 0;
         }
         @media screen and (max-width: 991px) {
             border-radius: 48px;
@@ -114,11 +116,11 @@
                 background: #F6F5EF;
                 border-radius: 50%;
                 top: -116px;
-                right: -52px;
+                right: -42px;
                 z-index: 1;
                 @media screen and (max-width: 767px) {
-                    width: calc(100vw - 56px);
-                    height: calc(100vw - 56px);
+                    width: calc(100vw - 80px);
+                    height: calc(100vw - 80px);
                     top: -115px;
                     left: 0;
                 }
@@ -158,9 +160,6 @@
                 padding: 140px 40px 100px 40px;
             }
             @media screen and (max-width: 667px) {
-                width: 100%;
-                max-width: 100%;
-                order: 0;
                 padding: 140px 28px 100px 28px;
             }
         }

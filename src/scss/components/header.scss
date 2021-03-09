@@ -7,6 +7,8 @@
     top: 0;
     background-color: #f6f5ef;
     transition: .25s linear all;
+    width: calc(100% + 160px);
+    margin-left: -80px;
     @media screen and (max-width: 1400px) {
         padding: 31px 35px;
     }
