@@ -10,5 +10,5 @@ import AOS from 'aos';
 AOS.init({
     duration: 1000,
     once: true,
-    disable: window.innerWidth < 540,
+    disable: 'mobile'
 });
