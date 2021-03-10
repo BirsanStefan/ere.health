@@ -78,6 +78,9 @@
             }
         }
     }
+    input[type='submit']#submitForm {
+        border-radius: 12px!important;
+    }
     button[type="submit"],
     input[type="submit"] {
         margin-top: 10px;

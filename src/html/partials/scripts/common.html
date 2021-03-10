@@ -49,3 +49,12 @@
 
     }).scroll();
 </script>
+
+<!--disable form action and redirect-->
+<script>
+    $('form').on('submit', function(event) {
+        event.preventDefault();
+        // my_form_treatment(this, event);
+        alert("succes!");
+    });
+</script>
