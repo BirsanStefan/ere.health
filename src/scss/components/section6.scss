@@ -5,6 +5,9 @@
     align-items: flex-start;
     padding-bottom: 80px;
     padding-top: 100px;
+    @media screen and (min-width: 1200px) { // for FAQs - menu bug
+        padding-bottom: 110px;
+    }
     @media screen and (max-width: 1025px) {
         padding-top: 80px;
         padding-bottom: 90px;
